@@ -1,4 +1,6 @@
 
+@import '~antd/dist/antd.css';
+
 ul,li{list-style: none;padding: 0;margin: 0;}
 .myWrap{display: flex;flex: 1;}
 .myLeft{width: 200px;overflow: scroll;height: 100%;border-left: 1px solid #eee;box-sizing: border-box;padding: 10px;

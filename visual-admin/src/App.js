@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-// import Main from './common/main'
+import Main from './common/main'
 import Left from './common/left'
 import Components from './common/components'
-// import Right from './common/right'
+import Right from './common/right'
 import Head from './common/head'
 import utils from './utils'
 import getData from './utils/getData'
@@ -94,23 +94,23 @@ export default class App extends React.Component {
               </Tooltip>
             </div> : null
           }
-          {/* {
+          {
               this.state.selectTabs.includes("shu")&&(!ide)?<Left state={{schema:this.state.schema,editObj:this.state.editObj}} changeSchema={this.changeSchema}></Left>:null
-            } */}
-            {/* {
+            }
+            {
               this.state.selectTabs.includes("ku")&& (!ide)?<Components ></Components>:null
-            } */}
+            }
               <div className={this.state.showPreview?"showPreview":"main"}>
-                {/* {(!ide)&&(this.state.showPreview)?<Button className="showPreviewButton" onClick={()=>{
+                {(!ide)&&(this.state.showPreview)?<Button className="showPreviewButton" onClick={()=>{
                   this.changeSchema({showPreview:!this.state.showPreview});
                 }}>返回搭建</Button>:null}
                 {
                   ide?<Main schema={this.state.schema} resetTime={this.state.resetTime} showPreview={this.state.showPreview} selectKey={this.state.editObj.key} type={this.state.type}></Main>:<iframe name="ideIframe" title="ide" className="ideIframe" ref={this.ideIframe} src={window.origin+"?ide=true"}></iframe>
-                } */}
+                }
               </div>
-            {/* {
+            {
                (!ide)?<Right key={this.state.editObj.key} state={{schema:this.state.schema,editObj:this.state.editObj}} changeSchema={this.changeSchema}></Right>:null
-            } */}
+            }
         </div>
 
 

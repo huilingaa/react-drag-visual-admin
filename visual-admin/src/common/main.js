@@ -43,8 +43,8 @@ export default class App extends React.Component {
 
   //针对可拖拽的节点，画布也可以进行拖拽增加节点  
   handleDragOver = (e) => {
-    e.preventDefault();
-    e.stopPropagation()
+    // e.preventDefault();
+    // e.stopPropagation()
     let allNum = utils.getOffsetLeft(e.currentTarget);
     let diffNum = e.pageX - allNum;
     let position = "";
