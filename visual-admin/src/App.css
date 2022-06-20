@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,li{list-style: none;padding: 0;margin: 0;}
+.myWrap{display: flex;flex: 1;}
+.myLeft{width: 200px;overflow: scroll;height: 100%;border-left: 1px solid #eee;box-sizing: border-box;padding: 10px;
+  height: 100%;overflow: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myRight{width: 300px;height: 100%;border-left: 1px solid #eee;padding: 10px;
 }
+.main{flex: 1;border-left: 1px solid #eee;}
+.ideIframe{border: none;width: 100%;height: 100%;}
+.my-button{
+  height: 32px;display: flex;
+  align-items: center;background: #ff0036;
+  color: #fff;
+  justify-content: center;
+  width:100px;
+}
+.my-button:hover{background:#c10d33;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.myTabs{
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  display: flex;flex-direction: column;
+}
+.myTabs .tabsItem{width: 100%;display: flex;
+  font-size: 24px;margin: 2px 0;
+  align-items: center;justify-content: center;height: 40px;}
+.myTabs .tabsItem:hover{background: #c8f3fd;}
+.myTabs .tabsItem.itemSelect{
+  background: #9edae8;
+}
+.allBg{display: flex;flex-direction: column;height: 100vh;}
+.hd{height:60;background: #f5f5f5;}
+
+
+.myHead{
+  height: 50px;
+  background: #f5f5f5;
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding:0 20px;
+  position: relative;
+}
+.myHead .myLogo{
+  height: 40px;margin: 0;
+  margin-bottom: 8px;
+  margin-right: 100px;
+}
+.myHead .mySave{
+  margin-left: auto;
+}
+.myHead .myChange{
+  display: flex;
+  margin-right: auto;
+}
+.myHead .stepDiv{
+  display:"flex";
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.myHead-type{
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.showPreview{height: 100%;width: 100%;z-index: 10000;width: 100%;height: 100%;left: 0;top: 0;position: fixed;}
+.showPreviewButton{position: absolute;z-index: 10;right: 10px;top: 10px;}
+.myTitle{
+  font-size: 16px;
+  color: #0f79c5;
+  text-align: center;
+  padding: 5px;
 }

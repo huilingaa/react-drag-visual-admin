@@ -1,0 +1,28 @@
+.mainCanvas{padding: 10px;}
+#monaco{height: 100px;width: 500px;}
+[data-drag="ace-drag"]{
+    outline: 1px solid #aaa;
+}
+[data-drag="ace-drag"]:hover{outline: 1px dashed #1890ff;}
+
+[data-postion="beforeSelect"]{
+    position: relative;
+}
+[data-postion="beforeSelect"]::after{
+content: " ";
+position: absolute;
+border-left: 3px solid #1890ff;
+height:100%;left:-3px;top: 0;
+}
+[data-postion="afterSelect"]{
+    position: relative;
+}
+[data-postion="afterSelect"]::after{
+    content: " ";
+    position: absolute;
+    border-right: 3px solid #1890ff;
+    height:100%;right: -3px;top: 0;
+    }
+[data-drag="select"]{
+    outline: 1px solid #1890ff;
+}
