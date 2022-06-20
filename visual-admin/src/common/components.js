@@ -4,7 +4,6 @@ import { Input } from 'antd';
 import './components.css';
 import utis from '../utils/index'
 
-// Serialize-javascript 能够序列化 JavaScript 库成含有正则表达式和功能的 JSON 包
 
 import serialize from 'serialize-javascript';
 import AddComponent from '../component/addComponent'

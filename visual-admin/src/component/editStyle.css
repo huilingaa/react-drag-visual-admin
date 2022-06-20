@@ -1,0 +1,17 @@
+.div-wrap{
+    position: relative;
+    height: 200px;
+    background: #eee;
+}
+.div-marigin-top,.div-marigin-bottom,.div-marigin-left,.div-marigin-right{
+    display: flex;
+    align-items: center;justify-content: center;
+    overflow: hidden;
+}
+
+
+.div-wrap .heng-input{
+    border: none;outline: none;
+    height: 20px;text-align: center;
+
+}
